@@ -7,7 +7,8 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "spec": false
         }
       },
       "root": "",
@@ -28,6 +29,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/normalize.css/normalize.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "phone-book-project"
+    }
+  },
+  "defaultProject": "phone-book-project",
+  "cli": {
+    "analytics": "e3546e65-9390-465d-ab62-38a7a1281efa"
+  }
 }
